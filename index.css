@@ -1,0 +1,34 @@
+/* src/index.css */
+
+/* Definição das Variáveis Globais de Cor (A "Mágica") */
+:root {
+  /* Tons de Azul Água/Refrescante */
+  --cor-primaria: #00b4d8;    /* Azul Turquesa Principal (Botões, Títulos) */
+  --cor-secundaria: #90e0ef;  /* Azul Claro (Hover, Destaques secundários) */
+  --cor-fundo-app: #03045e;   /* Azul Escuro Profundo (Para o Degradê/Fundo) */
+  
+  /* Cores Neutras e de Vidro */
+  --cor-texto: #ffffff;
+  --cor-texto-subutil: rgba(255, 255, 255, 0.7);
+  --cor-vidro-fundo: rgba(255, 255, 255, 0.06); /* Vidro mais sutil */
+  --cor-vidro-borda: rgba(255, 255, 255, 0.1);
+  --cor-input-fundo: rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; 
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  color: var(--cor-texto);
+  /*  FUNDO PADRÃO */
+  
+  background-color: var(--cor-fundo-app);
+  background-image: linear-gradient(135deg, #023e8a 0%, #0077b6 100%);
+}
